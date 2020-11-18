@@ -1,0 +1,23 @@
+[
+  {
+    "id": "d4b65ce6-573b-4a84-afa7-c311319bb6e7",
+    "name": "Grand Cherokee",
+    "releaseYear": 2020,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "25a4af28-7659-4d04-a4ef-2846d4b0cde1",
+    "name": "Charger",
+    "releaseYear": 2020,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "00194d51-9c92-4fdd-a7ae-acf43a38fa1b",
+    "name": "Sentra",
+    "releaseYear": 2019,
+    "available": true,
+    "gasAvailable": true
+  }
+]
