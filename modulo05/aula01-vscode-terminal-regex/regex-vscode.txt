@@ -1,0 +1,61 @@
+regex101.com
+
+^\d{3}.\d{3}.\d{3}-\d{2}$
+
+123.123.123-14
+321.321.321-15
+987.987.987-87
+
+replace [. -] - vazio
+
+Before:
+
+123.123.123-14
+321.321.321-15
+987.987.987-87
+
+After:
+
+12312312314
+32132132115
+98798798787
+
+#############################################################################
+
+replace: ^(\w+),\s(\w+)$
+{firstName: "$2", lastName: "$1"}
+
+Before:
+
+Wendel, Erick
+Gomes, Laila
+Johnson, Jose
+
+After:
+
+{firstName: "Erick", lastName: "Wendel"}
+{firstName: "Laila", lastName: "Gomes"}
+{firstName: "Jose", lastName: "Johnson"}
+
+#############################################################################
+
+replace: \[(.*?)\]\(([http|https].*?)\)
+<a href="$2">$1</a>
+
+Before:
+
+0 [Erick Wendel](https://erickwendel.com) faz palestras e você deveria segui-lo lá no [twitter](http://twitter.com/erickwendel_) ou até no [Instagram](https://instagram.com/erickwendel_)
+
+Ah e pode pesquisar no [Google](https://google.com) ou
+[Yahoo](https://yahoo.com)
+
+vai que vai!
+
+After:
+
+0 <a href="https://erickwendel.com">Erick Wendel</a> faz palestras e você deveria segui-lo lá no <a href="http://twitter.com/erickwendel_">twitter</a> ou até no <a href="https://instagram.com/erickwendel_">Instagram</a>
+
+Ah e pode pesquisar no <a href="https://google.com">Google</a> ou
+<a href="https://yahoo.com">Yahoo</a>
+
+vai que vai!
