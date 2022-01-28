@@ -1,0 +1,13 @@
+{
+  "name": "01-factory",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src",
+    "test": "node tests/userFactory.test.js"
+  },
+  "devDependencies": {
+    "rewiremock": "^3.14.3"
+  }
+}
