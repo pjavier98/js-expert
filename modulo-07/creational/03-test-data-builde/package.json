@@ -1,0 +1,13 @@
+{
+  "name": "03-test-data-builde",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "npx mocha -w test/*.test.js"
+  },
+  "devDependencies": {
+    "chai": "4",
+    "mocha": "8"
+  }
+}
